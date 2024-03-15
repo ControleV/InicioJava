@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Arrays {
     public static void main (String[] args) {
         /*Ligação direta -- Mais paia*/
@@ -17,6 +19,14 @@ public class Arrays {
 
 
         /*Ligação dinâmica -- Altera o tamanho da array dinamicamente*/
-        
+        ArrayList<Integer> pecados = new ArrayList<Integer>();
+        pecados.add(666);
+        pecados.add(999);
+        pecados.add(777);
+        pecados.set(2, 323334);
+        pecados.remove(1);
+
+        System.out.println(pecados.get(0));
+        System.out.println(pecados.size());
     }
 }
